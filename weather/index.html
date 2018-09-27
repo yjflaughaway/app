@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_853195_0vthxdg4ula.css"/>
+</head>
+<body>
+	<div class="page1">
+		<section class="container">
+			<div class="position">
+				<i class="iconfont icon-dingwei"></i>
+				<span class="citys">太原市  阳曲县</span>
+				<img class="pic" src="img/pic.png"/>
+			</div>
+			<div class="air">
+				空气<span class="pollution">轻度污染</span>
+			</div>
+			<div class="weather-txt">
+				<p class="txt-temperature">0°</p>
+				<p class="txt-weather">晴</p>
+				<p class="show txt">湿度 28%</p>
+				</div>
+				<p class="txt-tips">天冷了，注意保暖~</p>
+			<img  id="background" src="img/screen.png" alt="" />
+		</section>
+		<!--今天明天-->
+		<section class="sec-tomorrow">
+			<div class="item">
+				<div class="top">
+					<p class="date">今天</p>
+					<p class="temperature">2/-11°</p>
+				</div>
+				<div class="bottom">
+					<p class="weather">晴转多云</p>
+					<img href="img/0.png" class="logo"/>
+					<!--<div class="logo"></div>-->
+				</div>
+			</div>
+			<div class="item">
+				<div class="top">
+					<p class="date">明天</p>
+					<p class="temperature">2/-13°</p>
+				</div>
+				<div class="bottom">
+					<p class="weather">晴</p>
+					<!--<div class="logo"></div>-->
+					<img src="img/1.png" class="logo"/>
+				</div>
+			</div>
+	
+			<div class="item"></div>
+		</section>
+		<!--24小时-->
+		<section class="sec-hours">
+			<div id="ct-scroll" style="width: 400%;">
+				<ol id="ls-hours-weather">
+			
+				</ol>
+			</div>
+		</section>
+		<!--七天预报-->
+		<section class="sec-days">
+			<div id="ct-scroll" style="width: 4.45rem;">
+				<ol id="ls-days">
+					
+				</ol>
+			</div>
+		</section>
+		<section class="sec-living">
+			<div class="react-swipe-container">
+				<ul class="ls-living">
+					<li class="item" data-boss="shzs">
+						<img src="img/xiazai (1).svg"/>
+						<p class="content">带伞</p>
+						<p class="title">雨伞</p>
+					</li>
+					<li class="item" data-boss="shzs">
+						<img src="img/xiazai.svg"/>
+						<p class="content">冷</p>
+						<p class="title">穿衣</p>
+					</li>
+					<li class="item" data-boss="shzs">
+						<img src="img/xiazai (5).svg"/>
+						<p class="content">较弱</p>
+						<p class="title">防晒</p>
+					</li>
+					<li class="item" data-boss="shzs">
+						<img src="img/xiazai (2).svg"/>
+						<p class="content">较易发</p>
+						<p class="title">感冒</p>
+					</li>
+					<li class="item" data-boss="shzs">
+						<img src="img/xiazai (4).svg"/>
+						<p class="content">较不宜</p>
+						<p class="title">运动</p>
+					</li>
+					<li class="item" data-boss="shzs">
+						<img src="img/xiazai (3).svg"/>
+						<p class="content">较适宜</p>
+						<p class="title">洗车</p>
+					</li>
+					<li class="item" data-boss="shzs">
+						<img src="img/xiazai (6).svg"/>
+						<p class="content">不宜</p>
+						<p class="title">钓鱼</p>
+					</li>
+					<li class="item" data-boss="shzs">
+						<img src="img/xiazai (7).svg"/>
+						<p class="content">良好</p>
+						<p class="title">交通</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="footer">数据来源于中国天气网</section>
+	</div>
+		
+	<!--搜索页-->
+	<div class="search-page">
+		<div id="ct-search">
+			<a id="btn-cancel" href="javascript:void(false)">取消</a>
+			<div id="ct-input">
+				<img src="img/xaizai (8).svg"/>
+				<input type="text" id="i-location" placeholder="搜索地区/景点" value="">
+			</div>
+		</div>
+		<div id="ct-hot-city">
+			<div id="ct-now">
+				
+				<p class="title">当前定位</p>
+				<ul class="ls-city">
+					<li class="opt city ">小店区</li>
+					
+				</ul>
+			</div>
+			<div id="ct-history">
+				<a href="javascript:;" id="btn-clean"><img src="img/xiazai (9).svg"/></a>
+				<p class="title">历史记录</p>
+				<ul class="ls-city">
+					<li class="opt city ">沈阳</li>
+					<li class="opt city center">华山</li>
+				</ul>
+			</div>
+			<p class="title">热门城市</p>
+			<ul class="ls-city">
+				<li class="opt city " data-province="北京" data-city="北京">北京</li>
+				<li class="opt city center" data-province="上海" data-city="上海">上海</li>
+				<li class="opt city " data-province="广东" data-city="广州">广州</li>
+				<li class="opt city " data-province="广东" data-city="深圳">深圳</li>
+				<li class="opt city center" data-province="河南" data-city="郑州">郑州</li>
+				<li class="opt city " data-province="陕西" data-city="西安">西安</li>
+				<li class="opt city " data-province="江苏" data-city="南京">南京</li>
+				<li class="opt city center" data-province="浙江" data-city="杭州">杭州</li>
+				<li class="opt city " data-province="湖北" data-city="武汉">武汉</li>
+				<li class="opt city " data-province="四川" data-city="成都">成都</li>
+				<li class="opt city center" data-province="辽宁" data-city="沈阳">沈阳</li>
+				<li class="opt city " data-province="天津" data-city="天津">天津</li>
+			</ul>
+			<br />
+			<p class="title1">热门景区</p>
+			<ul class="ls-city">
+				<!--<li class="opt spot " data-place="故宫博物院">故宫</li>
+				<li class="opt spot center" data-place="颐和园">颐和园</li>
+				<li class="opt spot " data-place="九寨沟风景区">九寨沟</li>
+				<li class="opt spot " data-place="凤凰古城景区">凤凰古城</li>
+				<li class="opt spot center" data-place="秦始皇陵">秦始皇陵</li>
+				<li class="opt spot " data-place="龙门石窟景区">龙门石窟</li>
+				<li class="opt spot " data-place="武陵源风景名胜区">武陵源</li>
+				<li class="opt spot center" data-place="华山风景名胜区">华山</li>
+				<li class="opt spot " data-place="黄山风景区(山麓)">黄山</li>-->
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/index.js"></script>

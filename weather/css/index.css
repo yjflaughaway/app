@@ -1,0 +1,455 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body {
+	background: #f5f5f5;
+}
+section.container {
+	width: 100%;
+	height: 9.6rem;
+	background-image: linear-gradient(-90deg,#50ade8,#7ae0fa);
+	position: relative;
+}
+.position{
+	width: 100%;
+	height: 1rem;
+	font-size: 0.3rem;
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+	line-height: 1rem;
+	/*background: #3BBEFF;*/
+	position: relative;
+	opacity: .8;
+	
+}
+.position >i{
+	/*display: block;*/
+	width: .16rem;
+	height: .16rem;
+}
+.pic {
+	display: block;
+	position: absolute;
+	right: .25rem;
+	top: .24rem;
+}
+.air {
+	width: 1.5rem;
+	height: .88rem;
+	margin-left: .24rem;
+	margin-top: .24rem;
+	border-radius: .20rem;
+	background: #F1AB62;
+	color: #fff;
+	font-size: .24rem;
+	font-weight: normal;
+	text-align: center;
+	line-height: .40rem;
+	box-shadow: .02rem 0.03rem .1rem .005rem rgba(0,0,0,0.3);
+	
+}
+.air span{
+	display: block;
+	font-size: .28rem;
+	opacity: .8;
+}
+.weather-txt {
+	text-align: center;
+}
+.txt-temperature {
+	font-size: 1.24rem;
+    color: #fff;
+    line-height: .96rem;
+    height: .96rem;
+    text-align: center;
+    margin-top: .24rem;
+    margin-left: .5rem;
+    font-weight:300;
+}
+.txt-weather {
+	font-size: .44rem;
+    color: #fff;
+    text-align: center;
+    line-height: .22rem;
+    height: .22rem;
+    margin-top: .34rem;
+    opacity: .8;
+}
+.txt {
+	height: .3rem;
+	font-size: .28rem;
+	text-align: center;
+	line-height: .3rem;
+	color: #fff;
+	margin-top: .34rem;
+	opacity: .8;
+}
+.txt-tips {
+	height: .35rem;
+	line-height: .35rem;
+	font-size: .32rem;
+	text-align: center;
+	margin-top: .85rem;
+	opacity: .8;
+	color: #fff;
+}
+#background {
+	display: block;
+	width: 100%;
+	height: 3.45rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.sec-tomorrow {
+    background: #fff;
+    height: 2.1rem;
+    padding-top: .56rem;
+    border-bottom: .01rem solid #e4e4e4;
+    margin-bottom: .2rem;
+    position: relative;
+}
+.item {
+    float: left;
+    width: 50%;
+    height: .52rem;
+    font-size: .28rem;
+    color: #434343;
+    line-height: 14px;
+    padding: 0 .24rem;
+}
+.top {
+    height: .32rem;
+    margin-bottom: 13px;
+    line-height: .32rem;
+}
+.date{
+	float: left;
+}
+.temperature {
+	float: right;
+}
+.bottom {
+	height: .42rem;
+}
+.weather {
+	float: left;
+	/*width: .42rem;*/
+	height: .52rem;
+	line-height: .52rem;
+}
+.logo {
+	display: block;
+	width: .52rem;
+	height: .52rem;
+	/*background-image: url("../img/0.png");
+	background-repeat: no-repeat;
+	background-size: .52rem;*/
+	float: right;
+}
+.sec-tomorrow:after {
+    content: "";
+    position: absolute;
+    width: .04rem;
+    height: 1.04rem;
+    background-color: #f0f0f0;
+    left: 50%;
+    top: .52rem;
+}
+.sec-hours {
+	height: 2.76rem;
+	border-bottom: 1px solid #e4e4e4;	
+	border-top: 1px solid #e4e4e4;	
+	margin-bottom: .2rem;
+    padding-top: .56rem;
+    background-color: #fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.sec-hours::-webkit-scrollbar {
+	width: 0;
+}
+#ls-hours-weather {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#ls-hours-weather .item {
+    /*float: left;*/
+    /*width: 2.083%;*/
+    text-align: center;
+    position: relative;
+}
+#ls-hours-weather .item .txt-time {
+    font-size: .24rem;
+    line-height: .24rem;
+    height: .24rem;
+    color: #999;
+}
+.icon{
+	height: .48rem;
+    width: .48rem;
+    display: block;
+    margin: .3rem auto
+}
+.txt-degree {
+    font-size: .28rem;
+    color: #434343;
+    line-height: .28rem;
+    height: .28rem;
+    position: relative;
+}
+.keypoint img {
+	height: .48rem;
+    width: .48rem;
+    display: block;
+    margin: .3rem auto
+}
+.sec-days {
+	width: 100%;
+	height: 7.8rem;
+	border-bottom: 1px solid #e4e4e4;	
+	border-top: 1px solid #e4e4e4;	
+	margin-bottom: .2rem;
+    padding-top: .56rem;
+    background-color: #fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.sec-days::-webkit-scrollbar {
+	width: 0;
+}
+#ls-days {
+	display: flex;
+	justify-content: space-between;
+}
+#ls-days .item {
+    float: left;
+    text-align: center;
+}
+.day {
+	color: #434343;
+	font-size: .24rem;
+	text-align: center;
+    line-height: .24rem;
+    height: .24rem;
+}
+.date {
+	color: #434343;
+	margin-top: 0.1rem;
+	margin-left: .1rem;
+	font-size: .24rem;
+	text-align: center;
+    line-height: .24rem;
+    height: .24rem;
+}
+.weather {
+	color: #434343;
+	font-size: .28rem;
+	text-align: center;
+	/*margin-left: .1rem;*/
+	margin-top: 0.1rem;
+	margin-bottom: .1rem;
+    line-height: .28rem;
+    height: .28rem;
+    width: 1rem;
+}
+.ct-night {
+    margin-top: 2.82rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.wind {
+    font-size: .24rem;
+    color: #b2b2b2;
+    line-height: .24rem;
+    height: .24rem;
+    width: .8rem;
+    text-align: center;
+    /*margin: .12rem auto .12rem;*/
+    margin-top: 0.2rem;
+    overflow: hidden;
+}
+#ls-days .item .icon {
+    width: .48rem;
+    height: .48rem;
+    display: block;
+    margin:  .2rem auto;
+    
+}
+
+.sec-living {
+	width: 100%;
+	height: 3.75rem;
+}
+.ls-living .item {
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    width: 25%;
+    height: 1.88rem;
+    border-right: .02rem solid #e6e6e6;
+    border-bottom: .02rem solid #e6e6e6;
+}
+ .content {
+    font-size: .28rem;
+    color: #434343;
+    line-height: .28rem;
+    height: .28rem;
+    margin-bottom: .12rem;
+}
+.sec-living .title {
+    color: #999;
+    height: .24rem;
+    line-height: .24rem;
+    text-align: center;
+}
+.ls-living .item img {
+    height: .48rem;
+    width: .48rem;
+    display: block;
+    margin: .3rem auto .2rem;
+    background-size: .48rem;
+}
+
+.footer {
+	width: 100%;
+	height: .75rem;
+	text-align: center;
+	line-height: .75rem;
+	font-size: .28rem;
+	color: #bababa;
+}
+/*搜索页*/
+.search-page {
+	width: 100%;
+	height: 0;
+	/*height: 13.34rem;*/
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	overflow: hidden;
+	transition: all .5s;
+}
+#ct-search {
+    height: .9rem;
+    padding: .14rem 0;
+    position: relative;
+    border-bottom: .02rem solid #eee;
+}
+#btn-cancel {
+    float: right;
+    font-size: .28rem;
+    color: #434343;
+    width: 1.2rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+}
+ #ct-input {
+    position: relative;
+    margin-right: 1.2rem;
+    margin-left: .26rem;
+}
+#ct-hot-city {
+    padding: .24rem .26rem .14rem;
+    position: re;
+    /*top: .9rem;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
+    overflow: auto;
+}
+#ct-input img {
+	position: absolute;
+    height: .28rem;
+    width: .28rem;
+    top: .16rem;
+    left: .2rem;
+     z-index: 2;
+    background-size: .28rem;
+   
+}
+ #i-location {
+ 	position: absolute;
+ 	top: 0;
+    width: 100%;
+    height: .6rem;
+    padding: .1rem 0 .1rem .64rem;
+    box-sizing: border-box;
+    line-height: .48rem;
+    background: #f2f2f2;
+    border-radius: .88rem;
+    font-size: .3rem;
+    font-weight: normal;
+    color: #434343;
+    /*-webkit-appearance: none;*/
+    border-width: 0;
+    outline: none;
+}
+
+ #btn-clean {
+    float: right;
+    background-size: .34rem .34rem;
+    height: .34rem;
+    width: .34rem;
+    margin-top: .42rem;
+}
+.ct-hot-city .title,.ct-history .title, {
+    float: left;
+    font-size: .32rem;
+    color: #434343;
+    height: .44rem;
+    line-height: .4rem;
+    margin: .2rem 0;
+}
+.title1 {
+	float: left;
+    font-size: .32rem;
+    color: #434343;
+    height: .44rem;
+    line-height: .4rem;
+    margin: .2rem 0;
+}
+#ct-hot-city .opt {
+    box-sizing: border-box;
+    background: #f2f2f2;
+    border-radius: .88rem;
+    padding: 0 .32rem;
+    width: 32%;
+    height: .64rem;
+    line-height: .64rem;
+    margin-bottom: .24rem;
+    font-size: .28rem;
+    color: #434343;
+    text-align: center;
+    float: left;
+    margin-right: .08rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#ct-hot-city .title {
+	display: block;
+    font-size: .32rem;
+    color: #434343;
+    height: .44rem;
+    line-height: .4rem;
+    margin: .2rem 0;
+}
+.ls-city {
+	min-height: .88rem;
+	
+    clear: both;
+}
+#ct-history a{
+	display: flex;
+}
