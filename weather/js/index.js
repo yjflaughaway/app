@@ -116,6 +116,10 @@
 		})
 		$("#btn-cancel").click(function(){
 			let texts=$("input").val();
+			if(texts==""){
+			  $(".search-page").css({"height":0});
+			  $(".page1").css({"display":"block"});
+			}else{
 			for (let i in city) {
 				for (let j in city[i]) {
 					if(texts==j){
@@ -125,6 +129,7 @@
 				}
 			}
 			alert("该城市不存在");
+			}
 		})	
 		
 	}
